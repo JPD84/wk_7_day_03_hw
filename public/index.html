@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Currency Exchange</title>
+    <script src="./js/bundle.js"></script>
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+
+<body>
+    <h1 class="title">Currency Exchange</h1>
+    <div id="app">
+
+        <div>
+            <label class="select currency" for="currency_select">Select a Currency:</label>
+            <select id="currency_select" v-model="selectedCurrencyIndex">
+                <option selected disabled>Select</option>
+                <option v-for="(value, key ) in currencies" :value="key">{{key}}</option>
+            </select>
+        </div>
+        <div>
+            <label class="Amount" for="amount">Amount:</label>
+            <input class="Amount box" type="number" min="0" id="amount" v-model="AmountValue" required>
+        </div>
+
+        <div>
+            <button class="convert" v-on:click="convert"> Convert from EUR </button>
+
+        </div>
+
+        <p>
+            {{Result}} {{selectedCurrencyIndex}}
+        </p>
+
+        <div>
+            <label class="Select a Currency" for="currency_select">Select a Currency:</label>
+            <select id="currency_select" v-model="FromCurrencyIndex">
+                <option selected disabled>Select</option>
+                <option v-for="(value, key ) in currencies" :value="key">{{key}}</option>
+            </select>
+        </div>
+
+        <div>
+            <label class="Amount" for="amount">Amount:</label>
+            <input class="Amount box" type="number" min="0" id="amount" v-model="FromAmountValue" required>
+
+        </div>
+
+        <div>
+            <button class="convertFromEuro" v-on:click="convertFromEuro"> Convert to EUR </button>
+
+        </div>
+
+        <p>
+            {{FromResult}} EUROS
+        </p>
+    </div>
+</body>
+
+</html>

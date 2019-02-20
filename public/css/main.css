@@ -1,0 +1,62 @@
+body{
+background-image: url("./piggybank.png")
+}
+
+h1{
+    font-family: 'Trebuchet MS';
+    font-size: 60px;
+}
+
+button {
+    font-family: 'Impact', fantasy;
+    appearance: none;
+    box-shadow: 2;
+    border-radius: 0.25;
+    color: rgb(30, 98, 110);
+    background-color: yellow;
+    border: rgb(2, 2, 17);
+    margin: 12px 6px;
+  } 
+    
+  .Select{
+      width: 40%;
+      padding-left: 30px;
+      font-size: 30px;
+      
+  }
+
+  .select{
+    width: 40%;
+    padding-left: 30px;
+    font-size: 30px; 
+
+  }
+
+  .Amount{
+    width: 40%;
+    padding-left: 30px;
+    font-size: 25px;  
+  }
+
+  .convertFromEuro{
+      font-size: 20px;
+      
+
+  }
+
+  .convert{
+      font-size: 20px;
+  }
+
+  /* .Amount box{
+      box-sizing: 80px;  */
+      
+      
+  /* } */
+
+  p{
+      font-size: 20px;
+      
+  }
+
+  
